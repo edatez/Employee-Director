@@ -10,13 +10,24 @@ class Directory extends React.Component {
     role: "",
     manager: "",
     users: [],
-    search: ""
+    search: "",
+    searchType: "name",
+    sort: ""
   };
 
   updateSearch =(search)=>{
-    console.log(search);
+    // console.log(search);
     this.setState ({search});
   }
+
+  updateSearchType =(searchType)=> {
+    this.setState({searchType});
+  }
+
+  updateSort =(sort)=> {
+    this.setState({sort});
+  }
+
   componentDidMount() {
     API
         .getUsers()
@@ -29,10 +40,17 @@ class Directory extends React.Component {
   render() {
     return (
       <Container>
-        <Card body>
-          <SearchForm updateSearch ={this.updateSearch} />
+        <Card body className = "my-4">
+          <SearchForm updateSearch ={this.updateSearch} searchType={this.state.searchType} updateSearchType={this.updateSearchType}/>
         </Card>
-        <UserTable users = {this.state.users} />
+        <h2>Employees</h2>
+        <UserTable 
+          users = {this.state.users}  
+          search ={this.state.search}
+          SearchType = {this.state.SearchType}
+          sort={this.state.sort}
+          updateSort = {this.updateSort}
+        />
       </Container>
     )
   }
