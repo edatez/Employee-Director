@@ -1,5 +1,6 @@
 import React from "react";
 import useUserFilter from "../../utils/hooks/useUserFilter";
+import useLocationSort from "../../utils/hooks/useLocationSort";
 import { Table } from "react-bootstrap";
 
 function UserTable( { users, searchType, search, sort, updateSort } ) {
@@ -11,21 +12,7 @@ function UserTable( { users, searchType, search, sort, updateSort } ) {
     //     return !props.search || fullName.toLowerCase().includes( props.search.toLowerCase() );
     // }
 
-    const sortByLocation = (userA, userB) => {
-
-        const locationA = `${userA.location.city}, ${userA.location.state}`;
-        const locationB = `${userB.location.city}, ${userB.location.state}`;
-
-        if ( locationA < locationB ) {
-            return -1;
-        }
-
-        if ( locationA > locationB ) {
-            return 1;
-        }
-
-        return 0;
-    }
+    const sortByLocation = useLocationSort (sort);
 
     return (
 
