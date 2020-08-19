@@ -31,8 +31,7 @@ function UserTable( { users, searchType, search, sort, updateSort } ) {
                 </tr>
             </thead>
             <tbody>
-                {users.filter( filterBySearch ).sort (sortByLocation).map(user => {
-
+                {users.filter(filterBySearch).sort(sortByLocation).map(user => {
                     return (
                         <tr key={user.id.value}>
                             <td>{user.name.first}</td>

@@ -10,7 +10,7 @@ function useUserFilter (searchType, search) {
         location: () => `${user.location.city}, ${user.location.state}`,
         email: () => `${user.email}`
       };
-      return types[searchType] ();
+      return types[searchType] ;
     };
     return getSearchTypeContent(user).toLowerCase().includes (search.toLowerCase());
 
