@@ -1,55 +1,47 @@
 # Employee-Directory
-An employee directory application with React.
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/edatez/employee-directory)
 
+## Description
 
-## Overview
-
-For this assignment, you'll create a employee directory with React. This assignment will require you to break up your application's UI into components, manage component state, and respond to user events.
+An employee directory application with React. Deployed at [Heroku.](https://damp-citadel-97590.herokuapp.com/)
 
 ## User Story
 
-* As a user, I want to be able to view my entire employee directory at once so that I have quick access to their information.
+As a user, I want to be able to view my entire employee directory at once so that I have quick access to their information.
 
-## Business Context
+## Table of Contents 
 
-An employee or manager would benefit greatly from being able to view non-sensitive data about other employees. It would be particularly helpful to be able to filter employees by name.
+* [Installation](#installation)
 
-## Acceptance Criteria
+* [Usage](#usage)
 
-Given a table of random users, when the user loads the page, a table of employees should render. 
+* [License](#license)
 
-The user should be able to:
+* [Tests](#tests)
 
-  * Sort the table by at least one category
+* [Questions](#questions)
 
-  * Filter the users by at least one property.
+## Installation
 
-## Commit Early and Often
+To install necessary dependencies, run the following command:
 
-One of the most important skills to master as a web developer is version control. Building the habit of committing via Git is important for two reasons:
+```
+npm i
+```
 
-1. Your commit history is a signal to employers that you are actively working on projects and learning new skills
+## Usage
 
-2. Your commit history allows you to revert your code base in the event that you need to return to a previous state
+Run npm start to run app locally. Server configured to run on port 3000.
 
-Follow these guidelines for committing:
+## License
 
-* Make single purpose commits for related changes to ensure a clean, manageable history. If you are fixing two issues, make two commits
+    This project is licensed under the MIT license.
+  
+## Tests
 
-* Write descriptive, meaningful commit messages so that you and anyone else looking at your repository can easily understand its history
+No testing software is used.
 
-* Don't commit half done work, for the sake of your collaborators (and your future self!)
+## Questions
 
-* Test your application before you commit to ensure functionality at every step in the development process
-
-We would like you to have well over 200 commits by graduation, so commit early and often!
-
-
-## Submission on BCS
-
-You are required to submit the following:
-
-* the URL to the deployed application
-
-* the URL to the Github repository
+If you have any questions about the repo, open an issue or contact [edatez](https://github.com/edatez/Employee-Directory) directly at edatezcanli@gmail.com.
 
