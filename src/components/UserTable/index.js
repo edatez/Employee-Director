@@ -13,7 +13,7 @@ function UserTable( { users, searchType, search, sort, updateSort } ) {
     // }
 
     const sortByLocation = useLocationSort (sort);
-
+    console.log(sortByLocation)
     return (
 
         <Table striped bordered hover>
