@@ -7,7 +7,7 @@ function SearchForm(props) {
         <Form onSubmit={e => e.preventDefault()}>
             <Form.Group controlId="formBasicEmail">
                 <Form.Label>Search By Name</Form.Label>
-                <Form.Control type="email" placeholder="Enter email" onChange={e => props.updateSearch(e.target.value)} />
+                <Form.Control type="email" placeholder="Enter name" onChange={e => props.updateSearch(e.target.value)} />
             </Form.Group>
         </Form>
     )

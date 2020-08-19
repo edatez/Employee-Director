@@ -8,14 +8,13 @@ function useUserFilter (searchType, search) {
       const types = {
         name: () => `${user.name.first} ${user.name.last}`,
         location: () => `${user.location.city}, ${user.location.state}`,
-        email: () => user.email
+        email: () => `${user.email}`
       };
       return types[searchType] ();
     };
     return getSearchTypeContent(user).toLowerCase().includes (search.toLowerCase());
 
   }
-
   return filterBySearch;
 }
 
