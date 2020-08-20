@@ -1,7 +1,5 @@
 function useUserFilter (searchType, search) {
   
-  searchType="name";
-
   const filterBySearch = user => {
 
     if (!search) return true;

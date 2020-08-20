@@ -47,7 +47,7 @@ class Directory extends React.Component {
         <UserTable 
           users = {this.state.users}  
           search ={this.state.search}
-          SearchType = {this.state.SearchType}
+          searchType = {this.state.searchType}
           sort={this.state.sort}
           updateSort = {this.updateSort}
         />
